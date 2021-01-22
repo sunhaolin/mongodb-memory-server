@@ -72,7 +72,7 @@
     "watch": "cross-env MONGOMS_DOWNLOAD_DIR=./tmp jest --watchAll",
     "coverage": "cross-env MONGOMS_DOWNLOAD_DIR=./tmp jest --coverage",
     "lint": "yarn run eslint && yarn run tscheck",
-    "eslint": "eslint -c ../../.eslintrc.js 'src/**/*.{js,ts}'",
+    "eslint": "eslint -c ../../.eslintrc.js ./src --ext js,ts",
     "test": "yarn run lint && yarn run coverage",
     "test:watch": "yarn run watch",
     "tscheck": "tsc --noEmit"
